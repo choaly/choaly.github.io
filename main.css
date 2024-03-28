@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+    width: 100%;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    /* text-rendering: optimizeLegibility; */
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; /* inherit; */
+    text-decoration:none; 
+    /* cursor:pointer;   */
+}
+
+.main-container {
+    display: flex;
+    width: inherit;
+    flex-direction: column; /* sets its contents to be laid out from top to bottom */
+    justify-content: center; /* align-items is for positioning a flex item's main axis (column in this case). distributes the elements along the center of the main axis of the container */        
+    margin-top: 20%;
+    align-items: center;    /* align-items is for positioning a flex item's cross-axis */        
+}
+
+#header {
+    font-size: 48px;
+}
+
+.links {
+    font-size: 24px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.about-container {
+    flex-direction: column; /* sets its contents to be laid out from top to bottom */
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* center on cross-axis (vertical)*/
+    margin: auto;
+    margin-top: 8%;
+    width: 60%;
+}
+
+.about-container img {
+    width: 30%;
+    float: right;
+    margin-left: 4%;
+}
+
+.larger-font {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .navigation .links:first-of-type {
+    margin-right: 50%;
+    font-size: 36px;
+    /* color: red; */
+    font-style: italic;
+    font-weight: bold; 
+  }
