@@ -2,11 +2,19 @@
 
 body {
     width: 100%;
+    /* max-width: 800px; */
     font-family: "Nunito", sans-serif;
     font-weight: 200;
     font-style: normal;
+    margin: auto;
     /* text-rendering: optimizeLegibility; */
 }
+
+/* .about-container img {
+    width: 30%;
+    float: right;
+    margin-left: 4%;
+} */
 
 a {
     color: gray;
@@ -19,13 +27,16 @@ a:hover {
     /* cursor:pointer;   */
 }
 
-.main-container {
+.container {
     display: flex;
     width: inherit;
     flex-direction: column; /* sets its contents to be laid out from top to bottom */
     justify-content: center; /* align-items is for positioning a flex item's main axis (column in this case). distributes the elements along the center of the main axis of the container */        
-    margin-top: 20%;
     align-items: center;    /* align-items is for positioning a flex item's cross-axis */        
+}
+
+#homepage {
+    margin-top: 20%;
 }
 
 #header {
@@ -67,7 +78,45 @@ a:hover {
   .navigation .links:first-of-type {
     margin-right: 50%;
     font-size: 36px;
-    /* color: red; */
     font-style: italic;
     font-weight: bold; 
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials {
+    width: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container .row .item {
+    width: 30%;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .container .row .item img {
+    width: 400px;
+  }
+
+  #contact {
+    margin-top: 8%;
+  }
+
+  #experience {
+    margin-top: 8%;
+  }
+  
+  #experience .item {
+    width: 60%;
   }
