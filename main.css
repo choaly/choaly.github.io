@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
+* {
+  box-sizing: border-box; /* include padding and border in width */
+}
+
 body {
     width: 100%;
     /* max-width: 800px; */
@@ -96,17 +100,21 @@ a:hover {
   .container .row {
     display: flex;
     justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
   }
 
   .container .row .item {
-    width: 30%;
-    margin-top: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 16px;
+    border: 2px solid black;
+    width: 400px;
+    gap: 5%;
+    text-align: center; /* optional, centers content inside */
   }
   
   .container .row .item img {
-    width: 400px;
+    width: 100%;        /* image fills the container width */
+    height: auto;       /* maintains aspect ratio */
   }
 
   #contact {
